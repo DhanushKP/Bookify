@@ -1,0 +1,440 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@-webkit-keyframes wave1 {
+  0% {
+    transform: skewX(-55deg);
+  }
+  50% {
+    transform: skewX(-50deg);
+  }
+  100% {
+    transform: skewX(-55deg);
+  }
+}
+@keyframes wave1 {
+  0% {
+    transform: skewX(-55deg);
+  }
+  50% {
+    transform: skewX(-50deg);
+  }
+  100% {
+    transform: skewX(-55deg);
+  }
+}
+@-webkit-keyframes wave2 {
+  0% {
+    transform: skewX(-45deg);
+  }
+  50% {
+    transform: skewX(-40deg);
+  }
+  100% {
+    transform: skewX(-45deg);
+  }
+}
+@keyframes wave2 {
+  0% {
+    transform: skewX(-45deg);
+  }
+  50% {
+    transform: skewX(-40deg);
+  }
+  100% {
+    transform: skewX(-45deg);
+  }
+}
+@-webkit-keyframes wave3 {
+  0% {
+    transform: skewX(-65deg);
+  }
+  50% {
+    transform: skewX(-60deg);
+  }
+  100% {
+    transform: skewX(-65deg);
+  }
+}
+@keyframes wave3 {
+  0% {
+    transform: skewX(-65deg);
+  }
+  50% {
+    transform: skewX(-60deg);
+  }
+  100% {
+    transform: skewX(-65deg);
+  }
+}
+@-webkit-keyframes wave4 {
+  0% {
+    transform: skewX(-65deg);
+    border-radius: 0;
+  }
+  50% {
+    transform: skewX(-60deg) rotateX(50deg);
+    border-radius: 90%;
+  }
+  100% {
+    transform: skewX(-65deg);
+    border-radius: 0;
+  }
+}
+@keyframes wave4 {
+  0% {
+    transform: skewX(-65deg);
+    border-radius: 0;
+  }
+  50% {
+    transform: skewX(-60deg) rotateX(50deg);
+    border-radius: 90%;
+  }
+  100% {
+    transform: skewX(-65deg);
+    border-radius: 0;
+  }
+}
+body, html {
+  height: 100%;
+}
+
+h2 {
+	font-size: 30px;
+  color: rgb(0, 0, 0);
+	font-family: 'Pacifico', cursive;
+	background-color: none;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #e1e1e1 0%, white 50%, #e1e1e1 100%);
+}
+
+.stripe {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+}
+
+.stripe1 {
+  top: -300px;
+  left: -300px;
+  transform: skewX(-55deg);
+  background: rgba(233, 63, 0, 0.3);
+  -webkit-animation: wave1 6s infinite;
+  animation: wave1 6s infinite;
+}
+
+.stripe2 {
+  top: -350px;
+  left: -350px;
+  transform: skewX(-45deg);
+  background: rgba(233, 63, 0, 0.2);
+  -webkit-animation: wave2 6s infinite;
+  animation: wave2 6s infinite;
+}
+
+.stripe3 {
+  top: -356px;
+  left: -200px;
+  transform: skewX(-65deg);
+  background: rgba(233, 63, 0, 0.1);
+  -webkit-animation: wave3 6s infinite;
+  animation: wave3 6s infinite;
+}
+
+.stripe4 {
+  top: -322px;
+  left: -200px;
+  transform: skewX(-65deg);
+  background: rgba(233, 63, 0, 0.1);
+  -webkit-animation: wave3 6s infinite;
+  animation: wave3 6s infinite;
+}
+
+.stripe5 {
+  top: -380px;
+  left: -200px;
+  transform: skewX(-65deg);
+  background: rgba(233, 63, 0, 0.4);
+  -webkit-animation: wave3 6s infinite;
+  animation: wave3 6s infinite;
+}
+
+.stripe6 {
+  top: -179px;
+  left: -191px;
+  transform: skewX(-65deg);
+  background: rgba(233, 63, 0, 0.08);
+  -webkit-animation: wave4 6s infinite linear;
+  animation: wave4 6s infinite linear;
+}
+
+.stripe7 {
+  top: -316px;
+  left: 51px;
+  transform: skewX(-55deg);
+  background: rgba(233, 63, 0, 0.06);
+  -webkit-animation: wave4 6s infinite linear;
+  animation: wave4 6s infinite linear;
+}
+
+.form8 {
+  font-family: "Open Sans", sans-serif;
+  width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  box-shadow: 0px 0px 39px -5px rgba(0, 0, 0, 0.34);
+  background: #fff;
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: 250px;
+  transition: all 0.5s ease;
+  border-bottom: 4px solid #e93f00;
+}
+.form8.register__bg {
+  transition: all 0.5s ease;
+  background: #e93f00;
+  border-color: #a32c00;
+}
+.form8.register__bg .stripe1 {
+  background: rgba(255, 255, 255, 0.3);
+}
+.form8.register__bg .stripe2 {
+  background: rgba(255, 255, 255, 0.2);
+}
+.form8.register__bg .stripe3 {
+  background: rgba(255, 255, 255, 0.1);
+}
+.form8.register__bg .stripe4 {
+  background: rgba(255, 255, 255, 0.1);
+}
+.form8.register__bg .stripe5 {
+  background: rgba(255, 255, 255, 0.4);
+}
+.form8.register__bg .stripe6 {
+  background: rgba(255, 255, 255, 0.08);
+}
+.form8.register__bg .stripe7 {
+  background: rgba(255, 255, 255, 0.06);
+}
+.form8.register__bg .form8__text span {
+  color: #fff;
+}
+.form8.register__bg .form8__btncircle span {
+  background: #fff;
+}
+.form8.register__bg form8__btn {
+  background: #fff;
+  color: #e93f00;
+}
+.form8.register__bg .form8__btn::before {
+  color: #e93f00;
+}
+.form8.register__bg input {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+.form8.register__bg input::-webkit-input-placeholder {
+  color: #fff;
+}
+.form8.register__bg input::-moz-placeholder {
+  color: #fff;
+}
+.form8.register__bg input:-moz-placeholder {
+  color: #fff;
+}
+.form8.register__bg input:-ms-input-placeholder {
+  color: #fff;
+}
+.form8 input {
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: 0;
+  height: 50px;
+  line-height: 50px;
+  outline: none;
+  border-bottom: 1px solid #807b7b;
+  color: #e93f00;
+}
+.form8 input::-webkit-input-placeholder {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  opacity: 1;
+  color: #807b7b;
+}
+.form8 input::-moz-placeholder {
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  opacity: 1;
+  color: #807b7b;
+}
+.form8 input:-moz-placeholder {
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  opacity: 1;
+  color: #807b7b;
+}
+.form8 input:-ms-input-placeholder {
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  opacity: 1;
+  color: #807b7b;
+}
+.form8 input:focus {
+  transition: all 0.2s ease;
+}
+.form8 input:focus::-webkit-input-placeholder {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  opacity: 0;
+}
+.form8 input:focus::-moz-placeholder {
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  opacity: 0;
+}
+.form8 input:focus:-moz-placeholder {
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  opacity: 0;
+}
+.form8 input:focus:-ms-input-placeholder {
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  opacity: 0;
+}
+.form8__log {
+  position: relative;
+  transition: all 0.5s ease;
+  transform: translateY(0px);
+  opacity: 1;
+}
+.form8__log.slided {
+  opacity: 0;
+  transition: all 0.5s ease;
+  transform: translateY(-285px);
+}
+.form8__reg {
+  position: relative;
+  top: 50px;
+  transition: all 0.5s ease;
+  transform: translateY(0px);
+  opacity: 0;
+}
+.form8__reg.slided {
+  opacity: 1;
+  top: 0;
+  transition: all 0.5s ease;
+  transform: translateY(-200px);
+}
+.form8__text {
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+.form8__text span {
+  color: #e93f00;
+}
+.form8__btn {
+  background: #e93f00;
+  border: 0;
+  width: 70%;
+  margin: 40px auto 0;
+  display: block;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 17px;
+  padding: 10px;
+  border-radius: 40px;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  transition: all 0.2s ease;
+}
+.form8__btn:hover {
+  transition: all 0.2s ease;
+  background: rgba(233, 63, 0, 0.5);
+}
+.form8__btn:hover::before {
+  transition: all 0.2s ease-in;
+  transform: translateX(5px);
+}
+.form8__btn::before {
+  content: "";
+  font-family: FontAwesome;
+  font-size: 1.25em;
+  display: inline-block;
+  position: absolute;
+  right: 25px;
+  transition: all 0.3s ease-in-out;
+}
+.form8__btncircle {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 0;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  transition: all 1.2s ease;
+  outline: none;
+  z-index: 2;
+}
+.form8__btncircle:hover {
+  transition: all 1.2s ease;
+}
+.form8__btncircle:hover span {
+  width: 80%;
+  height: 4px;
+  border-radius: 15px;
+}
+.form8__btncircle span {
+  width: 5px;
+  height: 5px;
+  background: #e93f00;
+  display: block;
+  border-radius: 90%;
+  margin: 5px auto 0;
+  transition: all 0.2s ease;
+}
+.form8__btncircle span:nth-child(1) {
+  margin-top: 0;
+}
+.form8__btncircle.active {
+  border-radius: 90%;
+  background: #fff;
+}
+.form8__btncircle.active:hover {
+  transform: none;
+}
+.form8__btncircle.active:hover span {
+  width: 5px;
+  height: 5px;
+  border-radius: 90%;
+}
+.form8__btncircle.active span {
+  background: #e93f00 !important;
+  margin: 0 auto;
+  transition: all 0.2s ease;
+}
+.form8__btncircle.active span:nth-child(1) {
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+.form8__btncircle.active span:nth-child(3) {
+  opacity: 0;
+  transition: all 0.2s ease;
+}

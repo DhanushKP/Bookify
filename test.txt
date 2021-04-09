@@ -1,0 +1,6 @@
+delete after viewing <3
+
+npm install -g firebase-tools
+
+#ff3e0e - red
+pls work

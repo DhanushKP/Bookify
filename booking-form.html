@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Bookify</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="style/base-style.css" />
+
+</head>
+
+<body>
+	<h2>Bookify.com</h2>
+	<div id="booking" class="section">
+		<div class="section-center">
+			<div class="container">
+				<div class="row">
+					<div class="booking-form">
+						<form>
+							<div class="form-group">
+								<div class="form-checkbox">
+									<label for="roundtrip">
+										<input type="radio" id="roundtrip" name="flight-type">
+										<span></span>Roundtrip
+									</label>
+									<label for="one-way">
+										<input type="radio" id="one-way" name="flight-type">
+										<span></span>One way
+									</label>
+									<label for="multi-city">
+										<input type="radio" id="multi-city" name="flight-type">
+										<span></span>Multi-City
+									</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<span class="form-label">Travelling from</span>
+										<input class="form-control" type="text" placeholder="City or Railway station">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<span class="form-label">Travelling to</span>
+										<input class="form-control" type="text" placeholder="City or Railway station">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3">
+									<div class="form-group">
+										<span class="form-label">Departing</span>
+										<input class="form-control" type="date" required>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="form-group">
+										<span class="form-label">Returning</span>
+										<input class="form-control" type="date" required>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="form-group">
+										<span class="form-label">Adults (18+)</span>
+										<select class="form-control">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+										</select>
+										<span class="select-arrow"></span>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="form-group">
+										<span class="form-label">Children (0-17)</span>
+										<select class="form-control">
+											<option>0</option>
+											<option>1</option>
+											<option>2</option>
+										</select>
+										<span class="select-arrow"></span>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3">
+									<div class="form-group">
+										<span class="form-label">Travel class</span>
+										<select class="form-control">
+											<option>Chair car (CC)</option>
+											<option>Sleeper</option>
+											<option>Third Class</option>
+											<option>Second Class</option>
+											<option>First Class</option>
+										</select>
+										<span class="select-arrow"></span>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="form-btn">
+										<button class="submit-btn">Book</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<section>
+		<!--for demo wrap-->
+		<h1>Train timing schedule</h1>
+		<div class="tbl-header">
+			<table cellpadding="0" cellspacing="0" border="0">
+				<thead>
+					<tr>
+						<th>Train Code</th>
+						<th>Train Name</th>
+						<th>From-To</th>
+						<th>Date of Departure</th>
+						<th>Time of Departure</th>
+					</tr>
+				</thead>
+			</table>
+		</div>
+		<div class="tbl-content">
+			<table cellpadding="0" cellspacing="0" border="0">
+				<tbody>
+					<tr>
+						<td>CEX</td>
+						<td>Chennai Express</td>
+						<td>Chennai-Tuticorin</td>
+						<td>1/4/21</td>
+						<td>4:00 AM</td>
+					</tr>
+					<tr>
+						<td>STB</td>
+						<td>Shatabdi Express</td>
+						<td>Chennai-Banglore</td>
+						<td>2/4/21</td>
+						<td>11:45 PM</td>
+					</tr>
+					<tr>
+						<td>DDE</td>
+						<td>Double Decker Express</td>
+						<td>Chennai-Banglore</td>
+						<td>2/4/21</td>
+						<td>4:00 PM</td>
+					</tr>
+					<tr>
+						<td>CCS</td>
+						<td>Chuk Chuk Special</td>
+						<td>Delhi-Chennai</td>
+						<td>4/421</td>
+						<td>1:20 AM</td>
+					</tr>
+					<tr>
+						<td>RJD</td>
+						<td>Rajdhani Express</td>
+						<td>Kolkata-Jaipur</td>
+						<td>1/4/21</td>
+						<td>8:00 PM</td>
+					</tr>
+					<tr>
+						<td>AAD</td>
+						<td>AUSENCO</td>
+						<td>$2.38</td>
+						<td>-0.01</td>
+						<td>-1.36%</td>
+					</tr>
+					<tr>
+						<td>AAX</td>
+						<td>ADELAIDE</td>
+						<td>$3.22</td>
+						<td>+0.01</td>
+						<td>+1.36%</td>
+					</tr>
+					<tr>
+						<td>XXD</td>
+						<td>ADITYA BIRLA</td>
+						<td>$1.02</td>
+						<td>-1.01</td>
+						<td>+2.36%</td>
+					</tr>
+					<tr>
+						<td>AAC</td>
+						<td>AUSTRALIAN COMPANY </td>
+						<td>$1.38</td>
+						<td>+2.01</td>
+						<td>-0.36%</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+	<div class="theatre">
+		<div class="screen-side">
+			<h3 class="select-text">Please select a seat(s)</h3>
+		</div>
+		<div class="exit exit--front">
+		</div>
+		<ol class="cabin">
+			<li class="row row--1">
+				<ol class="seats" type="A">
+					<li class="seat">
+						<input type="checkbox" id="1A" />
+						<label for="1A">1A</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="1B" />
+						<label for="1B">1B</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="1C" />
+						<label for="1C">1C</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" disabled id="1D" />
+						<label for="1D">Occupied</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="1E" />
+						<label for="1E">1E</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="1F" />
+						<label for="1F">1F</label>
+					</li>
+				</ol>
+			</li>
+			<li class="row row--2">
+				<ol class="seats" type="A">
+					<li class="seat">
+						<input type="checkbox" id="2A" />
+						<label for="2A">2A</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="2B" />
+						<label for="2B">2B</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="2C" />
+						<label for="2C">2C</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="2D" />
+						<label for="2D">2D</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="2E" />
+						<label for="2E">2E</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="2F" />
+						<label for="2F">2F</label>
+					</li>
+				</ol>
+			</li>
+			<li class="row row--3">
+				<ol class="seats" type="A">
+					<li class="seat">
+						<input type="checkbox" id="3A" />
+						<label for="3A">3A</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="3B" />
+						<label for="3B">3B</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="3C" />
+						<label for="3C">3C</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="3D" />
+						<label for="3D">3D</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="3E" />
+						<label for="3E">3E</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="3F" />
+						<label for="3F">3F</label>
+					</li>
+				</ol>
+			</li>
+			<li class="row row--4">
+				<ol class="seats" type="A">
+					<li class="seat">
+						<input type="checkbox" id="4A" />
+						<label for="4A">4A</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="4B" />
+						<label for="4B">4B</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="4C" />
+						<label for="4C">4C</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="4D" />
+						<label for="4D">4D</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="4E" />
+						<label for="4E">4E</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="4F" />
+						<label for="4F">4F</label>
+					</li>
+				</ol>
+			</li>
+			<li class="row row--5">
+				<ol class="seats" type="A">
+					<li class="seat">
+						<input type="checkbox" id="5A" />
+						<label for="5A">5A</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="5B" />
+						<label for="5B">5B</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="5C" />
+						<label for="5C">5C</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="5D" />
+						<label for="5D">5D</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="5E" />
+						<label for="5E">5E</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="5F" />
+						<label for="5F">5F</label>
+					</li>
+				</ol>
+			</li>
+			<li class="row row--6">
+				<ol class="seats" type="A">
+					<li class="seat">
+						<input type="checkbox" id="6A" />
+						<label for="6A">6A</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="6B" />
+						<label for="6B">6B</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="6C" />
+						<label for="6C">6C</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="6D" />
+						<label for="6D">6D</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="6E" />
+						<label for="6E">6E</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="6F" />
+						<label for="6F">6F</label>
+					</li>
+				</ol>
+			</li>
+			<li class="row row--7">
+				<ol class="seats" type="A">
+					<li class="seat">
+						<input type="checkbox" id="7A" />
+						<label for="7A">7A</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="7B" />
+						<label for="7B">7B</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="7C" />
+						<label for="7C">7C</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="7D" />
+						<label for="7D">7D</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="7E" />
+						<label for="7E">7E</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="7F" />
+						<label for="7F">7F</label>
+					</li>
+				</ol>
+			</li>
+			<li class="row row--8">
+				<ol class="seats" type="A">
+					<li class="seat">
+						<input type="checkbox" id="8A" />
+						<label for="8A">8A</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="8B" />
+						<label for="8B">8B</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="8C" />
+						<label for="8C">8C</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="8D" />
+						<label for="8D">8D</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="8E" />
+						<label for="8E">8E</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="8F" />
+						<label for="8F">8F</label>
+					</li>
+				</ol>
+			</li>
+			<li class="row row--9">
+				<ol class="seats" type="A">
+					<li class="seat">
+						<input type="checkbox" id="9A" />
+						<label for="9A">9A</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="9B" />
+						<label for="9B">9B</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="9C" />
+						<label for="9C">9C</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="9D" />
+						<label for="9D">9D</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="9E" />
+						<label for="9E">9E</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="9F" />
+						<label for="9F">9F</label>
+					</li>
+				</ol>
+			</li>
+			<li class="row row--10">
+				<ol class="seats" type="A">
+					<li class="seat">
+						<input type="checkbox" id="10A" />
+						<label for="10A">10A</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="10B" />
+						<label for="10B">10B</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="10C" />
+						<label for="10C">10C</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="10D" />
+						<label for="10D">10D</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="10E" />
+						<label for="10E">10E</label>
+					</li>
+					<li class="seat">
+						<input type="checkbox" id="10F" />
+						<label for="10F">10F</label>
+					</li>
+				</ol>
+			</li>
+		</ol>
+		<div class="exit exit--back">
+		</div>
+	</div>
+  </div>
+
+	<div class="container" style="width: 75%;
+	margin: 100px auto;
+	border-radius: 5px;
+	background-color:#ff5c5c;
+	color: #515751;
+	padding-left: 100px;
+	padding-right: 100px;
+  
+  ">
+    <form class="form-horizontal" role="form">
+      <fieldset>
+        <legend>
+          <h1 class="form-top" style="color: white">Payment Gateway</h1>
+        </legend>
+        <div class="form-group">
+          <label class="col-sm-3 control-label" for="card-holder-name">Name</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" name="card-holder-name" id="card-holder-name" placeholder="Card Holder's Name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-3 control-label" for="card-number">Number</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" name="card-number" id="card-number" placeholder="Debit/Credit Card Number">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-3 control-label" for="expiry-month">Expiration</label>
+          <div class="col-sm-9">
+            <div class="row">
+              <div class="col-xs-6">
+                <select class="form-control col-sm-2" name="expiry-month" id="expiry-month">
+                  <option>Month</option>
+                  <option value="01">Jan (01)</option>
+                  <option value="02">Feb (02)</option>
+                  <option value="03">Mar (03)</option>
+                  <option value="04">Apr (04)</option>
+                  <option value="05">May (05)</option>
+                  <option value="06">June (06)</option>
+                  <option value="07">July (07)</option>
+                  <option value="08">Aug (08)</option>
+                  <option value="09">Sep (09)</option>
+                  <option value="10">Oct (10)</option>
+                  <option value="11">Nov (11)</option>
+                  <option value="12">Dec (12)</option>
+                </select>
+              </div>
+              <div class="col-xs-6">
+                <select class="form-control col-sm-2" name="expiry-year">
+                  <option value="17">2017</option>
+                  <option value="18">2018</option>
+                  <option value="19">2019</option>
+                  <option value="20">2020</option>
+                  <option value="21">2021</option>
+                  <option value="22">2022</option>
+                  <option value="23">2023</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-3 control-label" for="cvv">Card CVV</label>
+          <div class="col-sm-6">
+            <input type="text" class="form-control" name="cvv" id="cvv" placeholder="Security Code">
+          </div>
+        </div>
+        <br>
+        <div class="form-group">
+          <div class="col-sm-12">
+            <button type="button" class="btn btn-success" id="pay-now">Pay Now</button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.3.2/firebase-app.js"></script>
+
+    <script src="/__/firebase/8.3.2/firebase-auth.js"></script>
+    <script src="/__/firebase/8.3.2/firebase-firestore.js"></script>
+    <script src="/__/firebase/8.3.2/firebase-functions.js"></script>
+    <script src="/__/firebase/8.3.2/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+
+</body>
+
+</html>
