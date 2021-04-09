@@ -4,3 +4,15 @@ npm install -g firebase-tools
 
 #ff3e0e - red
 pls work
+
+To do
+1. add aadhar upi
+2. tran booking api
+3. ticket generation
+4. qr scanner (aadhi do app)
+
+
+done
+1. user auth
+2. passenger add
+
