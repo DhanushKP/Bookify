@@ -1,0 +1,37 @@
+<AuthRes ret=”y|n” code=”” txn=”” err=”” ts=”” actn=”” info=””>
+ <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+ <SignedInfo>
+ <CanonicalizationMethod
+ Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+ <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsasha256" />
+ <Reference URI="">
+ <Transforms>
+ <Transform
+ Algorithm="http://www.w3.org/2000/09/xmldsig#envelopedsignature" />
+ </Transforms>
+ <DigestMethod
+Algorithm="http://www.w3.org/2000/09/xmldsig#sha256"/>
+ <DigestValue></DigestValue>
+ </Reference>
+ </SignedInfo>
+ <SignatureValue></SignatureValue>
+ </Signature>
+ </AuthRes>
+
+ <?xml version="1.0" encoding="UTF-8"?>
+<xs:schemaxmlns:xs="http: www.w3.org="" 2001="" xmlschema"="" attributeformdefault="unqualified" elementformdefault="qualified" targetnamespace="http://www.uidai.gov.in/offlinePaperlesseKYC/1.0">
+<xs:element name="OKY">
+<xs:complextype>
+<xs:attribute name="v" type="xs:string"/>
+<xs:attribute name="n" type="xs:string"/>
+<xs:attribute name="i" type="xs:string"/>
+<xs:attribute name="d" type="xs:string"/>
+<xs:attribute name="e" type="xs:string"/>
+<xs:attribute name="m" type="xs:string"/>
+<xs:attribute name="g" type="xs:string"/>
+<xs:attribute name="a" type="xs:string"/>
+<xs:attribute name="r" type="xs:string"/>
+<xs:attribute name="s" type="xs:string"/>
+</xs:complextype>
+</xs:element>
+</xs:schema>
